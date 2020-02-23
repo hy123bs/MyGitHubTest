@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Log.i("aaaa","bbbb");
+                Log.i("aaaaa","bbbbb");
 
 
 
