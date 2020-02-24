@@ -6,22 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="#f00"
+    tools:context=".Page2Activity">
 
-
-    <Button
-        android:id="@+id/btnTest1"
-        android:text="btnTest1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></Button>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="page2"></TextView>
 
     <Button
-        android:onClick="Test2"
-        android:id="@+id/btnTest2"
-        android:text="btnTest2"
+        android:onClick="btnTest11"
+        android:text="btnTest11"
+        android:id="@+id/btTest11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></Button>
-
 
 </LinearLayout>
