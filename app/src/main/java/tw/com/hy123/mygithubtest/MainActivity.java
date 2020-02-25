@@ -11,14 +11,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button btntest1;
-//    public Intent a;
+    private MyView myView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        myView = findViewById(R.id.myview);
         btntest1 = findViewById(R.id.btnTest1);
+
         btntest1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,13 +32,23 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
     public void Test2(View view) {
         Intent aa = new Intent(this,Page2Activity.class);
         aa.putExtra("name","jump page2");
 //        startActivity(aa);
         startActivityForResult(aa,222);
     }
+
+    public  void Test3(View view){
+        myView.clear();
+    }
+
+    public void Test4(View view){
+        myView.undo();
+    }
+
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -53,4 +66,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }
